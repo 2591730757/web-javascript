@@ -8,7 +8,7 @@
  * 作用域：在当前作用域范围外时无法使用当前作用域内的方法和变量
  * 自动执行函数的作用：
  *      1.防止当前文件的方法和变量对全局环境(外部js)造成污染(冲突)
- *      2.
+ *      2.防止与第三方库命名冲突
  * 函数提升：指的是程序开始前会把所有函数预加载，可以声明在文件的任何位置，不需要遵循先定义后调用规则
  *      1.具名函数有函数提升概念
  *      2.函数表达式无函数提升概念(const functionname = function () {})
@@ -36,10 +36,10 @@
     /**
      * 创建元素
      */
-    function create(node) {
+    function createEl(node) {
         return document.createElement(node)
     };
-    window.myjs.create = create;
+    window.myjs.createEl = createEl;
 
     /**
      * 设置节点属性
