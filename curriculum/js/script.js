@@ -1,6 +1,6 @@
 "use strict";//严格模式
 
-const divDom = window.myjs.$id('table-data-wrap');//获取元素
+const divDom = window.myjs.getId('table-data-wrap');//获取元素
 const tableDom = window.myjs.createEl('table');//创建元素
 
 const styles = {
